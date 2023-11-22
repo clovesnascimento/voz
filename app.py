@@ -2,7 +2,7 @@ import subprocess
 
 # Run the setup.py install command
 try:
-    subprocess.run(['python', 'setup.py', 'install'], check=True)
+    subprocess.run(['python', 'setup.py', 'install', '--user'], check=True)
     print("Installation successful.")
 except subprocess.CalledProcessError as e:
     print(f"Installation failed with error: {e}")
