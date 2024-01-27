@@ -24,7 +24,7 @@ def voice_clone(text: str, speaker_wav: str, language: str):
     return "output.wav"
 
 iface = gr.Interface(fn=voice_clone, 
-                     inputs=[gr.Textbox(label="Введите текст", max_lines=3), gr.Audio(type="filepath", label="Загрузить аудиофайл"), gr.Radio(label="Выбор языка", choices=[("ru", label="Русский"), "en", "zh-cn","ja", "de", "fr", "it", "pt", "pl", "tr", "ko", "nl", "cs", "ar", "es", "hu"], value="ru")], 
+                     inputs=[gr.Textbox(label="Введите текст", max_lines=3), gr.Audio(type="filepath", label="Загрузить аудиофайл"), gr.Radio(label="Выбор языка", choices=["ru"=="Русский", "en", "zh-cn","ja", "de", "fr", "it", "pt", "pl", "tr", "ko", "nl", "cs", "ar", "es", "hu"], value="ru")], 
                      outputs=gr.Audio(type="filepath", label="Вывод"), 
                      title="Клонирование голоса")
 
