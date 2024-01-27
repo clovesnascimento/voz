@@ -50,6 +50,11 @@ bnunicodenormalizer
 mecab-python3==1.0.6
 unidic-lite==1.0.8
 cutlet
+black
+coverage
+isort
+nose2
+pylint==2.10.2
 #deps for tortoise
 einops>=0.6.0
 transformers>=4.33.0
