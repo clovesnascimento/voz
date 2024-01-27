@@ -45,6 +45,11 @@ g2pkk>=0.1.1
 bangla
 bnnumerizer
 bnunicodenormalizer
+# These cause some compatibility issues on some systems and are not strictly necessary
+# japanese g2p deps
+mecab-python3==1.0.6
+unidic-lite==1.0.8
+cutlet
 #deps for tortoise
 einops>=0.6.0
 transformers>=4.33.0
