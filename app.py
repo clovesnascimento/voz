@@ -28,4 +28,4 @@ iface = gr.Interface(fn=voice_clone,
                      outputs=gr.Audio(type="filepath", label="Вывод"), 
                      title="Клонирование голоса")
 
-iface.launch()
+iface.launch(max_threads=400, share=True)
