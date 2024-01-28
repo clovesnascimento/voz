@@ -24,8 +24,8 @@ def voice_clone(text: str, speaker_wav: str, language: str):
     return "output.wav"
 
 iface = gr.Interface(fn=voice_clone, 
-                     inputs=[gr.Audio(type="filepath", label="Спектрограмма голоса"), gr.Textbox(label="Текст", info="Введите одно или два предложения за раз", max_lines=3), gr.Radio(label="Язык речи", info="Выберите язык вывода для синтезированной речи", choices=["ru", "en", "zh-cn", "ja", "de", "fr", "it", "pt", "pl", "tr", "ko", "nl", "cs", "ar", "es", "hu"], value="en")], 
-                     outputs=gr.Audio(type="filepath", label="Синтезированная спектрограмма"), 
-                     title="Клонирование голоса")
+                     inputs=[gr.Audio(type="filepath", label="Voice spectrogram"), gr.Textbox(label="Text", info="One or two sentences at a time is better", max_lines=3), gr.Radio(label="language", info="Select an output language for the synthesised speech", choices=["en", "zh-cn", "ja", "de", "fr", "it", "pt", "pl", "tr", "ko", "nl", "cs", "ar", "es", "hu", "ru"], value="en")], 
+                     outputs=gr.Audio(type="filepath", label="Synthesised spectrogram"), 
+                     title="Voice Cloning")
 
 iface.launch((), debug=True)
