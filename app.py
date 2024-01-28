@@ -28,4 +28,4 @@ iface = gr.Interface(fn=voice_clone,
                      outputs=gr.Audio(type="filepath", label="Synthesised spectrogram"), 
                      title="Voice Cloning")
 
-iface.launch((), debug=True)
+iface.launch ()
