@@ -1,8 +1,8 @@
 ---
-title: Voice_Cloning
-emoji: 💻
-colorFrom: gray
-colorTo: gray
+title: Voice Cloning
+emoji: 🏃
+colorFrom: blue
+colorTo: blue
 sdk: gradio
 sdk_version: 4.5.0
 app_file: app.py
