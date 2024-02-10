@@ -66,7 +66,7 @@ class HifiganConfig(BaseGANVocoderConfig):
             L1 spectrogram loss parameters. Default to
             `{
                 "use_mel": True,
-                "sample_rate": 22050,
+                "sample_rate": 24000,
                 "n_fft": 1024,
                 "hop_length": 256,
                 "win_length": 1024,
@@ -121,7 +121,7 @@ class HifiganConfig(BaseGANVocoderConfig):
     l1_spec_loss_params: dict = field(
         default_factory=lambda: {
             "use_mel": True,
-            "sample_rate": 22050,
+            "sample_rate": 24000,
             "n_fft": 1024,
             "hop_length": 256,
             "win_length": 1024,
