@@ -50,7 +50,7 @@ class BaseVocoderConfig(BaseTrainingConfig):
     conv_pad: int = 0  # additional padding against convolutions applied to spectrograms
     use_cache: bool = False  # use in memory cache to keep the computed features. This might cause OOM.
     # OPTIMIZER
-    epochs: int = 10000  # total number of epochs to train.
+    epochs: int = 5000  # total number of epochs to train.
     wd: float = 0.0  # Weight decay weight.
     optimizer: str = "AdamW"
     optimizer_params: dict = field(default_factory=lambda: {"betas": [0.8, 0.99], "weight_decay": 0.0})
@@ -90,7 +90,7 @@ class BaseGANVocoderConfig(BaseVocoderConfig):
             Parameters for the L1 spectrogram loss. Defaults to
             `{
                 "use_mel": True,
-                "sample_rate": 22050,
+                "sample_rate": 24000,
                 "n_fft": 1024,
                 "hop_length": 256,
                 "win_length": 1024,
@@ -155,7 +155,7 @@ class BaseGANVocoderConfig(BaseVocoderConfig):
     l1_spec_loss_params: dict = field(
         default_factory=lambda: {
             "use_mel": True,
-            "sample_rate": 22050,
+            "sample_rate": 24000,
             "n_fft": 1024,
             "hop_length": 256,
             "win_length": 1024,
