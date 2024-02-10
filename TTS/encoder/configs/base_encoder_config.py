@@ -28,7 +28,7 @@ class BaseEncoderConfig(BaseTrainingConfig):
     audio_augmentation: Dict = field(default_factory=lambda: {})
 
     # training params
-    epochs: int = 10000
+    epochs: int = 5000
     loss: str = "angleproto"
     grad_clip: float = 3.0
     lr: float = 0.0001
