@@ -84,7 +84,7 @@ class WavernnConfig(BaseVocoderConfig):
     overlap_samples: int = 550
 
     # Training - overrides
-    epochs: int = 10000
+    epochs: int = 5000
     batch_size: int = 256
     seq_len: int = 1280
     use_noise_augment: bool = False
