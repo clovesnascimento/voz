@@ -31,7 +31,7 @@ class BaseAudioConfig(Coqpit):
             Padding method used in STFT. 'reflect' or 'center'. Defaults to 'reflect'.
 
         sample_rate (int):
-            Audio sampling rate. Defaults to 22050.
+            Audio sampling rate. Defaults to 24000.
 
         resample (bool):
             Enable / Disable resampling audio to ```sample_rate```. Defaults to ```False```.
@@ -120,7 +120,7 @@ class BaseAudioConfig(Coqpit):
     frame_length_ms: int = None
     stft_pad_mode: str = "reflect"
     # audio processing parameters
-    sample_rate: int = 22050
+    sample_rate: int = 24000
     resample: bool = False
     preemphasis: float = 0.0
     ref_level_db: int = 20
