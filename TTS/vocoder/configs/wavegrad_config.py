@@ -63,7 +63,7 @@ class WavegradConfig(BaseVocoderConfig):
     target_loss: str = "loss"  # loss value to pick the best model to save after each epoch
 
     # Training - overrides
-    epochs: int = 10000
+    epochs: int = 5000
     batch_size: int = 96
     seq_len: int = 6144
     use_cache: bool = True
