@@ -1,5 +1,5 @@
 ---
-title: Voice Clone
+title: Texto para Voz
 emoji: 🏃
 colorFrom: blue
 colorTo: red
@@ -8,5 +8,5 @@ license: mit
 ---
 
 # Descrição do projeto
-Este é um projeto de clonagem de voz.
+Este é um projeto de texto para voz.
 # voz
